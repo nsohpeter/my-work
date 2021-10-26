@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./Todo.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h2>our Todo list</h2>
+
+        </header>
+
+        <div class="content">
+            <button id="create" class="create-btn">Create Todo</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td>Title</td>
+                        <td>Description</td>
+                        <td>star date</td>
+                        <td>status</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <td>watch football</td>
+                        <td>match of Chelsae</td>
+                        <td>28 August,2021</td>
+                        <td>not complete</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <footer class="footer">
+            <h2>Made by us</h2>
+        </footer>
+
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close" id="close-modal">
+                <i class="fa fa-times" aria-hidden="true">close</i>
+            </a>
+            <form class="modal-form">
+                <input type="text" class="input" id="title-text" placeholder="enter Title">
+                <textarea id="inputText" class="input" placeholder="Description"></textarea>
+                <input type="date" class="input" id="enter-text" placeholder="start Dtae">
+                <button id="addSomething" class="submit-btn">ADD</button>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="./Todo.js"></script>
+</body>
+
+</html>
